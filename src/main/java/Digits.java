@@ -6,11 +6,12 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num){
-while(num/10>0){
-	digitList.add(num%10);
-	num=num/10;
+		int i=num;
+while(i/10>0){
+	digitList.add(i%10);
+	i=i/10;
 }
-digitList.add(num);
+digitList.add(i);
 	
 	}
 
